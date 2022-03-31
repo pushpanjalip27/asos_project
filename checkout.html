@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+      #lastpage{
+        /* border: 2px solid red; */
+        width: 60%;
+        height: 1000px;
+        margin: auto;
+      }
+       #selectTag {
+
+width: 100%;
+background: #0076bd;
+color: white;
+font-size: 20px;
+font-weight: bolder;
+
+}
+
+#nav2 {
+display: flex;
+margin: auto;
+border: 2px solid lightgray;
+width: 100%;
+height: 100px;
+/* margin-top: 30px; */
+
+}
+
+.cp {
+font-family: serif;
+font-size: 30px;
+margin-left: 70px;
+margin-top: 40px;
+color: #1f4160;
+}
+
+.lock {
+margin-left: 1000px;
+margin-top: 40px;
+font-size: 40px;
+}
+
+#pay1 {
+margin: auto;
+width: 60%;
+height: 1500px;
+margin-left: 50px;
+}
+
+#amz {
+/* border: 2px solid red; */
+text-decoration: none;
+font-family: serif;
+font-weight: bold;
+color: black;
+font-size: 20px;
+padding-top: -30px;
+padding-bottom: 30px;
+}
+
+#selectTag1 {
+width: 98%;
+height: 30px;
+}
+
+#add1 {
+width: 98%;
+height: 30px;
+}
+
+#add2 {
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
+}
+
+#ceckbox {
+margin-top: 20px;
+font-size: 15px;
+}
+
+#ship {
+border: 2px solid black;
+background: #003953;
+width: 350px;
+color: white;
+text-align: center;
+font-family: monospace;
+}
+
+#ship:hover {
+background: #0076bd;
+}
+
+#paym {
+border: 1px solid lightgray;
+height: 40px;
+
+}
+
+
+#paym2 {
+flex: 50%;
+padding: 0px 15px;
+}
+
+#row {
+display: flex;
+flex-wrap: wrap;
+margin: 0px -16px;
+}
+
+.btn {
+margin: auto;
+width: 350px;
+height: 40px;
+margin-top: 25px;
+margin-left: 200px;
+background: #8bcfcd;
+font-weight: bolder;
+font-size: 23px;
+text-align: center;
+}
+
+.btn:hover {
+background: #0076bd;
+}
+    </style>
+</head>
+<body>
+  <div id="lastpage"> 
+  <h1>1. Shipping Address</h1>
+  <h4>Add a new shipping address</h4>
+  <hr>
+  <form>
+      <p>Country</p>
+      <select id=selectTag1>
+          <option value=""></option>
+          <option value="united state">united state</option>
+          <option value="uk">uk</option>
+          <option value="Island">Islend</option>
+          <option value="India">India</option>
+          <option value="palau">palau</option>
+      </select>
+      <p>Full Name</p>
+      <input id="add1" type="text" placeholder="First and last name">
+
+      <p>Address line 1</p>
+      <input id="add1" type="text" placeholder="Street address ,company name,c/o">
+
+      <p>Address line 2</p>
+      <input id="add1" type="text" placeholder="Appartment,suite,unit, building,floor,etc.">
+
+      <div id="add2">
+          <p>City</p>
+          <input type="text" placeholder="eg.Las Vegas">
+
+          <p>State</p>
+          <input type="text" placeholder="eg.Naveda">
+
+          <p>Zip</p>
+          <input type="text" placeholder="eg.2345">
+      </div>
+      <p>Phone Number</p>
+      <input type="text" placeholder="Including area code"><br>
+      <input id="ceckbox" type="checkbox" name="" value="">
+      <label id="ceckbox" for=""> Use address for billing</label><br>
+  </form>
+  <h5 id="ship">SHIP TO THIS ADDRESS</h5>
+
+  <h1>2.Payment Method</h1>
+  <p id="paym">Please add or select a shipping address to proceed.</p>
+
+  <form>
+      <p>Payment Option</p>
+      <select id=selectTag1>
+          <option value=""></option>
+          <option value="cod"><a href=""> cash on delhivery</a> </option>
+          <option value="Credit card">Credit card</option>
+          <option value="Debit card">Debit Card</option>
+      </select>
+  </form>
+
+  <div id="paym1">
+      <h3>Payment</h3>
+      <label for="fname">Accepted Cards</label>
+      <div class="pyam2">
+          <i class="fa fa-cc-visa" style="color:navy;"></i>
+          <i class="fa fa-cc-amex" style="color:blue;"></i>
+          <i class="fa fa-cc-mastercard" style="color:red;"></i>
+          <i class="fa fa-cc-discover" style="color:orange;"></i>
+      </div>
+      <label for="cname">Name on Card</label>
+      <input type="text" id="cname" name="cardname" placeholder="pushpanjali patel">
+      <label for="ccnum">Credit card number</label>
+      <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+      <label for="expmonth">Exp Month</label>
+      <input type="text" id="expmonth" name="expmonth" placeholder="may">
+      <div class="row">
+          <div id="pyam2">
+              <label for="expyear">Exp Year</label>
+              <input type="text" id="expyear" name="expyear" placeholder="2024">
+          </div>
+          <div class="pyam2">
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" name="cvv" placeholder="013">
+          </div>
+      </div>
+  </div>
+  <div class="btn"><a href="thankyou.html" style='text-decoration: none;'>Place your order</a></div>
+</div>
+</div>
+             
+        <!-- <button onclick="window.location.href='.htmthankyou.html'">Thank You</button> -->
+</body>
+</html>
+
+<script>
+
+</script>

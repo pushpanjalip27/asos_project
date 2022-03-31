@@ -1,0 +1,209 @@
+
+
+#nav{
+    border: 2px solid black ;
+    display: flex;
+    flex-direction: row;
+    /* gap: 20px; */
+    width: 100%;
+    height: 50px;
+    background: black;
+}
+
+#nav>div{
+    /* border: 2px solid red; */
+    /* width: 80px; */
+    text-align: center;
+    align-items: center;
+   padding: 12px;
+}
+
+#section{
+    width: 80px;
+    text-align: center;
+    align-items: center;
+   padding: 12px;
+  
+}
+
+#section>a{
+   color: white;
+    text-decoration: none;
+    
+}
+
+#section:hover{
+    background: gray; 
+}
+
+#nav>img{
+    margin-left: 30px;
+
+}
+#like{
+    /* border: 2px solid  red; */
+    width: 30px;
+    height: 50px;
+}
+
+#nav3>input{
+    border:none;
+    border-radius: 30px;
+    width: 550px;
+    height: 25px;
+    font-size: 15px;
+    line-height: 14px;
+   
+}
+#like{
+    /* border: 2px solid  red; */
+    width: 30px;
+    height: 50px;
+}
+#shopping{
+    /* border: 2px solid red; */
+    width: 50px;
+    /* height: 50px; */
+
+
+}
+#shopping>img{
+    width: 50px;
+    height: 50px;
+}
+
+#navV{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    width: 100%;
+    height: 50px;
+    background: gray;
+    color: white;
+    
+}
+#navV>p{
+    margin-left: 30px;
+    font-family: monospace;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#navVV{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+#navVV1{
+    background: #9447ff;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bolder;
+}
+#navVV2{
+    background: black;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bolder;
+}
+#navVV1:hover{
+   color: rgb(88, 83, 83);
+}
+#navVV2:hover{
+    color: gray;
+}
+
+#newnav{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    height: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#newnav>h6{
+    /* border: 1px solid blue; */
+    margin-left: 50px;
+    
+}
+#wsec{
+    border: 0.01px solid rgb(236, 230, 230);
+    width: 100%;
+    height: 200px;
+    /* margin-left: 200px; */
+    align-items: center;
+    text-align: center;
+}
+
+#wsec>p{
+    margin-left: 200px;
+    margin-right: 100px;
+    font-size: 15px;
+}
+
+#btns{
+    /* border: 1px solid black ; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    gap: 20px;
+   
+}
+button{
+    border: 1px solid gray ;
+    border-radius: 20px;
+    margin-left: 30px;
+    height: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+#drop{
+    border: 0.01px solid rgb(211, 208, 208);
+    height: 40px;
+   
+
+}
+#drop1{
+    width: 150px;
+    height: 40px;
+}
+#drop2{
+    width: 150px;
+    height: 40px;
+}
+#drop3{
+    width: 150px;
+    height: 40px;
+}
+#drop4{
+    width: 150px;
+    height: 40px;
+}
+
+#box{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+#cards{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+#cards>img{
+    /* border: 2px solid blue; */
+    width: 350px;
+    height: 50px;
+    margin-left: 200px;
+}

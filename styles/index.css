@@ -1,0 +1,227 @@
+
+
+#nav{
+    border: 2px solid black ;
+    display: flex;
+    flex-direction: row;
+    /* gap: 20px; */
+    width: 100%;
+    height:60px;
+    background: black;
+}
+
+#nav>div{
+    /* border: 2px solid red; */
+    /* width: 80px; */
+    text-align: center;
+    align-items: center;
+   padding: 12px;
+}
+
+#section{
+    width: 80px;
+    text-align: center;
+    align-items: center;
+   padding: 12px;
+  
+}
+
+#section>a{
+   color: white;
+    text-decoration: none;
+    
+}
+
+#section:hover{
+    background: gray; 
+}
+
+#nav>img{
+    margin-left: 30px;
+
+}
+
+#nav3>input{
+    border:none;
+    border-radius: 30px;
+    width: 690px;
+    height: 30px;
+    font-size: 15px;
+    margin-top: 3px;
+    /* line-height: 14px; */
+   
+}
+#like{
+    /* border: 2px solid  red; */
+    width: 30px;
+    height: 50px;
+}
+#shopping{
+    /* border: 2px solid red; */
+    width: 50px;
+    /* height: 50px; */
+
+
+}
+#shopping>img{
+    width: 50px;
+    height: 50px;
+}
+
+#navV{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    width: 100%;
+    height: 50px;
+    background: gray;
+    color: white;
+    
+}
+#navV>p{
+    margin-left: 30px;
+    font-family: monospace;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#navVV{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+#navVV1{
+    background: #9447ff;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bolder;
+}
+#navVV2{
+    background: black;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bolder;
+}
+#navVV1:hover{
+   color: rgb(88, 83, 83);
+}
+#navVV2:hover{
+    color: gray;
+ }
+
+#offer{
+    border: 2px solid blueviolet;
+    width: 100%;
+    height: 200px;
+    background: #9447ff;
+    color: white;
+    font-weight: bold ;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+#sub{
+   margin-top:50px;
+    width: 100%;
+    height: 600px;
+    /* border:  2px solid red; */
+   
+}
+#sub1{
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    margin-top: 30px;
+}
+#sub2{
+    /* border: 2px solid black ; */
+    width: 270px;
+    margin-left: 13px;
+    text-align: center;
+    align-items: center;
+
+}
+#sub2>div>img{
+   /* border: 2px solid red; */
+    width: 100%;
+    height: 300px;
+}
+#sub2>h4>a{
+    text-decoration: none;
+    /* text-align: center;
+    align-items: center; */
+}
+
+#sub3{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 650px;
+}
+#sub4{
+    /* border: 2px solid yellowgreen; */
+    width: 45%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+}
+#sub4>img{
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 76%;
+}
+
+#sub4>button{
+    width: 150px;
+    height: 40px;
+    color: black;
+    font-family: monospace;
+    font-weight: bolder;
+}
+#sub4>button:hover{
+    background: black;
+    color: white;
+    font-family: monospace;
+    font-weight: bolder;
+}
+
+#heading{
+
+   text-align: center;
+   align-items: center;
+}
+
+#brands{
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+
+#brands>img{
+    width: 200px;
+    height: 200px;
+}
+#cards{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+#cards>img{
+    /* border: 2px solid blue; */
+    width: 350px;
+    height: 50px;
+    margin-left: 200px;
+}
+

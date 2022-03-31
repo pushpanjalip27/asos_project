@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .up{
+            margin-left:20px;
+        }
+        #login-form-div {
+            width: 35%;
+            height: 600px;
+            margin: auto;
+            align-items: center;
+            text-align: center;
+            background: #ffffff;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px;
+        }
+        #form1>input{
+            margin-left: 100px;
+            align-items: center;
+        }
+
+        #form1 {
+            display: grid;
+            gap: 3px;
+            width: 300px;
+            font-size: 20px;
+        }
+        #dob{
+            margin-left: 60px;
+        }
+
+        #sub {
+            width: 150px;
+            height: 45px;
+            margin: auto;
+            background: rgb(63, 148, 63);
+            margin-right: 40px;
+            font-weight: bolder;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="login-form-div">
+        <h1 class="up">ASOS</h1>
+        <form id="form1">
+            <!--Write form input elements here-->
+            <p>EMAIL:</p>
+            <input id="email" type="text" placeholder="Enter your email">
+            <p>FIRST NAME:</p>
+            <input id="fname" type="text" placeholder="Enter your first name">
+            <P>LAST NAME:</P>
+            <input id="lname" type="text" placeholder="Enter your last name">
+            <P>PASSWORD:</P>
+            <input id="password" type="text" placeholder="Enter your password">
+            <div id="dob">
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                </select>
+
+                <select>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                </select>
+
+                <select>
+                    <option value="2006">2006</option>
+                    <option value="2005">2005</option>
+                    <option value="2004">2004</option>
+                    <option value="2003">2003</option>
+                    <option value="2002">2002</option>
+                    <option value="2001">2001</option>
+                    <option value="2000">2000</option>
+                    <option value="1999">1999</option>
+
+                </select>
+            </div>
+            <input id="sub" type="submit" value="JOIN ASOS">
+
+
+            <p>If you have account<a href="signin.html">Sign In</a></p>
+        </form>
+
+    </div>
+</body>
+
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit", formSubmit);
+    var arr = JSON.parse(localStorage.getItem("useDatabase")) || [];
+    // console.log(arr);
+    function formSubmit(event) {
+        event.preventDefault();
+        var email = document.querySelector("#email").value;
+        var fname = document.querySelector("#fname").value;
+        var lname = document.querySelector("#lname").value;
+        var password = document.querySelector("#password").value;
+        var dob = document.querySelector("#dob").value;
+
+
+        var useData = {
+            emailAd: email,
+            fname: fname,
+            lname: lname,
+            password: password,
+            dob:dob,
+        }
+        arr.push(useData);
+           console.log(arr);
+
+        localStorage.setItem("useDatabase", JSON.stringify(arr));
+        alert("Sign Up Success");
+        window.location.href = "signin.html";
+    }
+</script>

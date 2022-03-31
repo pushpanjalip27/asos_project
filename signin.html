@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Signup</title>
+        <style>
+            .up{
+                margin-left: 100px;
+            }
+            #signup-form-div{
+                /* border: 2px solid red; */
+                width:20% ;
+                height: 300px;
+                margin: auto;
+                box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+               
+            }
+            #form1{
+                text-align: center;
+                align-items: center;
+                
+            }
+            #sub{
+                border:1px solid lightseagreen;
+                background: maroon;
+                color: mintcream;
+                font-size: 20px;
+                margin-top: 15px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="signup-form-div">
+            <h1 class="up">ASOS</h1>
+            <form id="form1">
+                <!--Write form input elements here-->
+              <p>EMAIL:</p>  
+            <input id="email" type="text" placeholder="Enter your email"><br>
+            <P>PASSWORD:</P>
+            <input id="pass" type="text" placeholder="Enter your password"><br>
+           <div>
+            <input id="sub" type="submit" value="Sign In">
+           </div>
+
+            </form>
+
+        </div>
+    </body>
+
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit", user);
+    var arr = JSON.parse(localStorage.getItem("useDatabase")) | [];
+    // console.log(arr);
+    function user(event) {
+        event.preventDefault();
+        var email = document.querySelector("#email").value;
+        var password = document.querySelector("#pass").value;
+        // console.log(email, password);
+
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i].emailAd == email && arr[i].password == pass) {
+                window.location.href = "index.html";
+                alert("Signin success")
+                // window.location.href = "index.html";
+            }
+            // else{
+            //     alert("Invalid crediential")
+            // }
+        }
+    }
+</script>
